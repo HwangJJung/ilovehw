@@ -58,8 +58,5 @@
   "babelBoilerplateOptions": {
     "entryFileName": "ilovehw",
     "mainVarName": "ilovehw"
-  },
-  "dependencies": {
-    "lodash": "^4.0.0"
   }
 }

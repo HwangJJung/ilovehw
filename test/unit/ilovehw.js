@@ -29,9 +29,10 @@ describe('ilovehw', () => {
   });
   describe('insertionSort()', () => {
     var tests = [
-      {msg:'빈배열', arg: [],       expected: -1},
-      {msg:'원소 1개',arg: [1],    expected: [1]},
-      {msg:'원소 2개',arg: [3,1], expected: [1,3]},
+      {msg:'배열이 아닌 오브젝트', arg: {arr:[1]},   expected: -1},
+      {msg:'빈배열', arg: [],                      expected: -1},
+      {msg:'원소 1개',arg: [1],                    expected: [1]},
+      {msg:'원소 2개',arg: [3,1],                  expected: [1,3]},
       {msg:'원소 20개',arg: [4,5,8,10,567,423,7686,564,2,432,132,657,18,26,51,65,7,58126,725,1],
         expected: [1,2,4,5,7,8,10,18,26,51,65,132,423,432,564,567,657,725,7686,58126]}
     ];

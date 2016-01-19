@@ -1,20 +1,4 @@
 const ilovehw = {
-  greet() {
-    return 'hello';
-  },
-  foo() {
-    return 'bar';
-  },
-  bar() {
-    return 'foo';
-  },
-  isSorted(arr) {
-    // 배열의 모든 인자들이 자신보다 앞에 있는 인자보다 큰지 검사
-    // 첫번째 인자일 경우에만 바로 true 리턴
-    return arr.every(function(value, index, array){
-      return index === 0 || array[index - 1] <= value;
-    });
-  },
   insertionSort(arr) {
     //array 인지 아닌지 검사
     if( Object.prototype.toString.call(arr) !== '[object Array]') {
