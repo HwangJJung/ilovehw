@@ -13,8 +13,8 @@
 - Install dependencies: `npm install`
 - Install gulp: `npm install -g gulp`
 - Run `npm run test` to preview and watch for all tests
-- Run `gulp test --file ${filename}` to watch for target file.
-- for example, `gulp test --file ilovehw` or `gulp test --file ilovehw.spec.js` will test only  ilovehw.spec.js file.
+- Run `gulp  --file ${filename}` to watch for a target test file.
+- for example, `gulp  --file ilovehw` or `gulp  --file ilovehw.spec.js` will test only ilovehw.spec.js file.
 - if you have permission error please install all again with `sudo`.
 
 
