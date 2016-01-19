@@ -10,9 +10,13 @@
 
 ## Getting Started
 - node required. please install node. https://nodejs.org/en/
-- Install gulp: `npm install --global gulp`
 - Install dependencies: `npm install`
-- Run `gulp` to preview and watch for tests
+- Install gulp: `npm install -g gulp`
+- Run `npm run test` to preview and watch for all tests
+- Run `gulp test --file ${filename}` to watch for target file.
+- for example, `gulp test --file ilovehw` or `gulp test --file ilovehw.spec.js` will test only  ilovehw.spec.js file.
+- if you have permission error please install all again with `sudo`.
+
 
 ## 폴더 구조
 - src/ilovehw 안에 소스코드

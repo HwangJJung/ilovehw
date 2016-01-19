@@ -1,5 +1,10 @@
 const ilovehw = {
   insertionSort(arr) {
+
+    //undefined 인지 아닌지 검사
+    if( typeof arr === 'undefined') {
+      return -1;
+    }
     //array 인지 아닌지 검사
     if( Object.prototype.toString.call(arr) !== '[object Array]') {
       return -1;
@@ -22,8 +27,11 @@ const ilovehw = {
         }
         arr[j+1] = temp;
       }
+
       return arr;
     }
   }
 };
+
+
 export default ilovehw;

@@ -7,6 +7,7 @@ import {Instrumenter} from 'isparta';
 import webpack from 'webpack';
 import webpackStream from 'webpack-stream';
 import source  from 'vinyl-source-stream';
+import {argv} from 'yargs'
 
 import mochaGlobals from './test/setup/.globals';
 import manifest  from './package.json';
@@ -82,6 +83,15 @@ function build() {
 }
 
 function _mocha() {
+  if(typeof argv.file != 'undefined') {
+    var target = String(argv.file).includes('.js') ? argv.file : argv.file+'.spec.js';
+    return gulp.src(['test/setup/node.js', 'test/unit/'+ target], {read: false})
+      .pipe($.mocha({
+        reporter: 'spec',
+        globals: Object.keys(mochaGlobals.globals),
+        ignoreLeaks: false
+      }));
+  }
   return gulp.src(['test/setup/node.js', 'test/unit/**/*.js'], {read: false})
     .pipe($.mocha({
       reporter: 'spec',

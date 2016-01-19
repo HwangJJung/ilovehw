@@ -29,6 +29,7 @@ describe('ilovehw', () => {
   });
   describe('insertionSort()', () => {
     var tests = [
+      {msg:'undefined 오브젝트',   expected: -1},
       {msg:'배열이 아닌 오브젝트', arg: {arr:[1]},   expected: -1},
       {msg:'빈배열', arg: [],                      expected: -1},
       {msg:'원소 1개',arg: [1],                    expected: [1]},
