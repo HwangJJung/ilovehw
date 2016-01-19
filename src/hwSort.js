@@ -1,6 +1,5 @@
-const ilovehw = {
+const hwSort = {
   insertionSort(arr) {
-
     //undefined 인지 아닌지 검사
     if( typeof arr === 'undefined') {
       return -1;
@@ -34,4 +33,4 @@ const ilovehw = {
 };
 
 
-export default ilovehw;
+export default hwSort;
