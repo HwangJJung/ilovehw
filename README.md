@@ -1,6 +1,8 @@
 
 ## 현욱아 사랑해
 
+![인성로봇](https://raw.githubusercontent.com/HwangJJung/ilovehw/master/%EC%9D%B8%EC%84%B1%EB%A1%9C%EB%B4%87.gif)
+
 [![Travis build status](http://img.shields.io/travis/HwangJJung/ilovehw.svg)](https://travis-ci.org/HwangJJung/ilovehw)
 [![Code Climate](https://codeclimate.com/github/HwangJJung/ilovehw/badges/gpa.svg)](https://codeclimate.com/github/HwangJJung/ilovehw)
 [![Test Coverage](https://codeclimate.com/github/HwangJJung/ilovehw/badges/coverage.svg)](https://codeclimate.com/github/HwangJJung/ilovehw)
