@@ -171,6 +171,73 @@ const hwSort = {
       };
   },
 
+  heapifiy(arr, i, heapSize) {
+    var largest = i;
+    var left = 2 * i + 1;
+    var right = 2 * i + 2;
+    if (left < heapSize && arr[i] < arr[left]) {
+      largest = left;
+    }
+
+    if (right < heapSize && arr[largest] < arr[right]) {
+      largest = right;
+    }
+
+    if (i !== largest) {
+      var temp = arr[i];
+      arr[i] = arr[largest];
+      arr[largest] = temp;
+      this.heapifiy(arr, largest, heapSize);
+    }
+  },
+
+  buildMaxHeap: function(arr) {
+    var mid = Math.floor(arr.length / 2);
+    for (var i = mid; i >= 0; i -= 1) {
+      this.heapifiy(arr, i, arr.length);
+    }
+
+    return arr;
+  },
+
+  heapSort: function(arr) {
+    this.buildMaxHeap(arr);
+    var heapSize = arr.length;
+    var temp;
+    for (var i = arr.length - 1; i > 0; i -= 1) {
+      temp = arr[0];
+      arr[0] = arr[i];
+      arr[i] = temp;
+      heapSize -=  1;
+      this.heapifiy(arr, 0, heapSize);
+    }
+
+    return arr;
+  },
+
+  partition(a) {
+    var l = a.length;
+    var idx = l - 1;
+    var fivot = a[idx];
+    for (i = 0; i < l; i++) {
+      var target = a[i];
+      if (target < fivot) {
+        if (idx < i) {
+          this.swap(a, idx + 1, i);
+          this.swap(a, idx, idx + 1);
+          idx++;
+        }
+      } else {
+        if (idx > i) {
+          this.swap(a, i, idx);
+          idx = i;
+        }
+      }
+    }
+
+    return idx;
+  },
+
   isvalid(arr) {
     //undefined 인지 아닌지 검사
     if (typeof arr === 'undefined') {
@@ -197,6 +264,12 @@ const hwSort = {
       // 첫번째 원소일 경우엔 바로 true 리턴
       return index === 0 || array[index - 1] <= value;
     });
+  },
+
+  swap(a, i, j) {
+    var temp = a[i];
+    a[i] = a[j];
+    a[j] = temp;
   },
 };
 
