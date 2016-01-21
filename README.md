@@ -17,9 +17,7 @@
 - if you have permission error please install all again with `sudo`.
 
 
-## progress
-
-[![ILOVE현욱](http://progressed.io/bar/38)]
+## progress ![ILOVE현욱](http://progressed.io/bar/38)
 
 | 과제   | 알고리즘 | 진척도 |
 | ------------- | ------------- | :-------------: |
