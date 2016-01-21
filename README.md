@@ -1,8 +1,6 @@
 
 ## 현욱아 사랑해
 
-![인성로봇](https://raw.githubusercontent.com/HwangJJung/ilovehw/master/%EC%9D%B8%EC%84%B1%EB%A1%9C%EB%B4%87.gif)
-
 [![Travis build status](http://img.shields.io/travis/HwangJJung/ilovehw.svg)](https://travis-ci.org/HwangJJung/ilovehw)
 [![Code Climate](https://codeclimate.com/github/HwangJJung/ilovehw/badges/gpa.svg)](https://codeclimate.com/github/HwangJJung/ilovehw)
 [![Test Coverage](https://codeclimate.com/github/HwangJJung/ilovehw/badges/coverage.svg)](https://codeclimate.com/github/HwangJJung/ilovehw)
@@ -40,3 +38,6 @@
 | HW#3.C3  |  Bottom-up all-pairs shortest algorithms  | ![ILOVE현욱](http://progressed.io/bar/0) |
 | HW#3.C4  | Floyd-Warshall algorithm  | ![ILOVE현욱](http://progressed.io/bar/0) |
 | HW#Special  | Red Black tree  | ![ILOVE현욱](http://progressed.io/bar/0) |
+
+
+![인성로봇](https://raw.githubusercontent.com/HwangJJung/ilovehw/master/%EC%9D%B8%EC%84%B1%EB%A1%9C%EB%B4%87.gif)
