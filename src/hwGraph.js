@@ -1,4 +1,6 @@
-var hwGraph = {
+//import hwStructure from 'hwStructure';
+
+const hwGraph = {
   bfs(graph, sourceIdx) {
     // graph undefined 체크
     if(typeof graph === 'undefined') return -1;
@@ -31,6 +33,23 @@ var hwGraph = {
       current.visitCode = 2;
     }
   }
+  // dijkstra(graph,weight,sourceIdx) {
+  //   graph.forEach((vertex) => {
+  //     vertex.distance = Number.MAX_VALUE;
+  //     vertex.parent = {};
+  //   })
+  //   var source = graph[sourceIdx];
+  //   var set = [];
+  //   var q = [];
+  //   hwStructure.heap.buildMinHeap(graph,"distance");
+  //   while(q.length > 0) {
+  //     var current = q.shift();
+  //     set.push(current);
+  //     current.adjacencyList.forEach((vertex) => {
+  //       if(vertex.distance > current.distance + w(current,vertex))
+  //     })
+  //   }
+  // }
 }
 
 export default hwGraph;

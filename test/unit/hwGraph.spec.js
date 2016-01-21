@@ -6,15 +6,6 @@ import sinon from 'sinon';
 var expect = chai.expect;
 var should = chai.should();
 
-
-Array.prototype.isSorted = function () {
-  // array 내 모든 인자들이 true를 리턴할 경우에만 true 리턴
-  return this.every(function(value, index, array){
-    // array 내 인자들이 앞선 인자보다 클때만 true 리턴
-    // 첫번째 원소일 경우엔 바로 true 리턴
-    return index === 0 || array[index - 1] <= value;
-  });
-}
 class Vertex {
   constructor(id) {
     this.adjacencyList = [];
